@@ -123,8 +123,8 @@ exports.branch = require('./lib/branch');
 exports.bundle = require('./lib/bundle');
 exports.map = require('./lib/map');
 exports.skip = require('./lib/skip');
-exports.File = require('./lib/File');
-exports.Files = require('./lib/Files');
+exports.File = require('./lib/file');
+exports.Files = require('./lib/files');
 
 const { applySourceMap, removeSourceMapComments } = require('./lib/sourcemaps');
 exports.applySourceMap = applySourceMap;
