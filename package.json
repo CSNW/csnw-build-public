@@ -1,0 +1,24 @@
+{
+  "name": "csnw-build",
+  "private": true,
+  "version": "0.6.1",
+  "description": "Internal build utils for CSNW",
+  "repository": "github:CSNW/csnw-build",
+  "license": "MIT",
+  "homepage": "https://github.com/CSNW/csnw-build#readme",
+  "author": "Tim Hall <tim.hall@cornerstonenw.com>",
+  "scripts": {
+    "test": "exit 0",
+    "format": "prettier --write \"**/*.{js}\""
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "dependencies": {
+    "mri": "^1.1.4"
+  }
+}

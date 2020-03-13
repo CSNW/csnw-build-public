@@ -1,0 +1,5 @@
+packages/csnw-rollup/__fixtures__/standard/build
+
+node_modules
+npm-debug.log
+.vscode
