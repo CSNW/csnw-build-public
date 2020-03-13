@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "a.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/metalsmith/tests/fixtures/src",
+    "contents": "<!DOCTYPE html>
+<head>
+  <meta charset=\\"utf-8\\">
+  <meta http-equiv=\\"x-ua-compatible\\" content=\\"ie=edge\\">
+  <title>A</title>
+  <meta name=\\"description\\" content=\\"A page\\">
+  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">
+</head>  <body>
+Howdy A!
+  </body>
+</html>",
+    "cwd": "C:/dev/csnw-build/packages/metalsmith/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/metalsmith/tests/fixtures/src/a.html",
+    "sourceMap": null,
+  },
+  "b.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/metalsmith/tests/fixtures/src",
+    "contents": "<!doctype html>
+<html>
+  <head>
+    <title>B</title>
+  </head>
+  <body>
+    Howdy B!
+  </body>
+</html>",
+    "cwd": "C:/dev/csnw-build/packages/metalsmith/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/metalsmith/tests/fixtures/src/b.html",
+    "sourceMap": null,
+  },
+}
+`;

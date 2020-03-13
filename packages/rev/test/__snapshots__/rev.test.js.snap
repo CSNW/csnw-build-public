@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "a.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": "<!doctype html>
+<html>
+  <head>
+    <link href=\\"./c-8171d94d61.css\\" rel=\\"stylesheet\\">
+  </head>
+  <body>
+    <script src=\\"b-bb454f7a0d.js\\"></script>
+  </body>
+</html>",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/a.html",
+    "sourceMap": null,
+  },
+  "b-bb454f7a0d.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": "var name = 'b';
+",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/b-bb454f7a0d.js",
+    "sourceMap": Object {
+      "file": "b.js",
+      "mappings": "AAAA;",
+      "names": Array [],
+      "sources": Array [
+        "b.js",
+      ],
+      "sourcesContent": Array [
+        "var name = 'b';
+",
+      ],
+      "version": 3,
+    },
+  },
+  "c-8171d94d61.css": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": ".logo {
+  background: url(d-ad30464376.svg);
+}
+",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/c-8171d94d61.css",
+    "sourceMap": Object {
+      "file": "c.css",
+      "mappings": "AAAA;kBACkB,gBAAK;;",
+      "names": Array [],
+      "sources": Array [
+        "c.css",
+      ],
+      "sourcesContent": Array [
+        ".logo {
+  background: url(d.svg);
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+  "d-ad30464376.svg": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": "<text>Howdy</text>",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/d-ad30464376.svg",
+    "sourceMap": null,
+  },
+  "manifest.json": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": "{
+  \\"b.js\\": \\"b-bb454f7a0d.js\\",
+  \\"d.svg\\": \\"d-ad30464376.svg\\",
+  \\"c.css\\": \\"c-8171d94d61.css\\"
+}",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/manifest.json",
+    "sourceMap": null,
+  },
+}
+`;
+
+exports[`skip pipeline in development 1`] = `
+Object {
+  "a.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": "<!doctype html>
+<html>
+  <head>
+    <link href=\\"./c.css\\" rel=\\"stylesheet\\">
+  </head>
+  <body>
+    <script src=\\"b.js\\"></script>
+  </body>
+</html>",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/a.html",
+    "sourceMap": null,
+  },
+  "b.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": "var name = 'b';
+",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/b.js",
+    "sourceMap": null,
+  },
+  "c.css": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": ".logo {
+  background: url(d.svg);
+}
+",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/c.css",
+    "sourceMap": null,
+  },
+  "d.svg": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "contents": "<text>Howdy</text>",
+    "cwd": "C:/dev/csnw-build/packages/rev/test/fixtures",
+    "path": "C:/dev/csnw-build/packages/rev/test/fixtures/d.svg",
+    "sourceMap": null,
+  },
+}
+`;

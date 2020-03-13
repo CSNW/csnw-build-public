@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "a.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/typescript/tests/fixtures",
+    "contents": "\\"use strict\\";
+Object.defineProperty(exports, \\"__esModule\\", { value: true });
+var A = /** @class */ (function () {
+    function A(value) {
+        this.name = value;
+    }
+    return A;
+}());
+exports.A = A;
+",
+    "cwd": "C:/dev/csnw-build/packages/typescript/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/typescript/tests/fixtures/a.js",
+    "sourceMap": Object {
+      "file": "a.js",
+      "mappings": ";;AAAA;IAGE,WAAY,KAAa;QACvB,IAAI,CAAC,IAAI,GAAG,KAAK,CAAC;IACpB,CAAC;IACH,QAAC;AAAD,CAAC,AAND,IAMC;AANY,cAAC",
+      "names": Array [],
+      "sources": Array [
+        "a.ts",
+      ],
+      "sourcesContent": Array [
+        "export class A {
+  name: string;
+
+  constructor(value: string) {
+    this.name = value;
+  }
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+  "b.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/typescript/tests/fixtures",
+    "contents": "\\"use strict\\";
+Object.defineProperty(exports, \\"__esModule\\", { value: true });
+function Button(props) {
+    return React.createElement(\\"button\\", null, props.children);
+}
+exports.Button = Button;
+var B = /** @class */ (function () {
+    function B() {
+    }
+    B.prototype.render = function () {
+        return React.createElement(Button, null, \\"(message)\\");
+    };
+    return B;
+}());
+exports.B = B;
+",
+    "cwd": "C:/dev/csnw-build/packages/typescript/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/typescript/tests/fixtures/b.js",
+    "sourceMap": Object {
+      "file": "b.js",
+      "mappings": ";;AAAA,gBAAuB,KAAK;IAC1B,OAAO,oCAAS,KAAK,CAAC,QAAQ,CAAU,CAAC;AAC3C,CAAC;AAFD,wBAEC;AAED;IAAA;IAIA,CAAC;IAHC,kBAAM,GAAN;QACE,OAAO,oBAAC,MAAM,oBAAmB,CAAC;IACpC,CAAC;IACH,QAAC;AAAD,CAAC,AAJD,IAIC;AAJY,cAAC",
+      "names": Array [],
+      "sources": Array [
+        "b.tsx",
+      ],
+      "sourcesContent": Array [
+        "export function Button(props) {
+  return <button>{props.children}</button>;
+}
+
+export class B {
+  render() {
+    return <Button>(message)</Button>;
+  }
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+}
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "a.css": Object {
+    "baseDir": "C:/dev/csnw-build/packages/clean-css/tests/fixtures",
+    "contents": ".name{color:red;font-size:1em}",
+    "cwd": "C:/dev/csnw-build/packages/clean-css/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/clean-css/tests/fixtures/a.css",
+    "sourceMap": Object {
+      "file": "a.css",
+      "mappings": "AAAA,MACE,MAAO,IACP,UAAW",
+      "names": Array [],
+      "sources": Array [
+        "a.css",
+      ],
+      "sourcesContent": Array [
+        ".name {
+  color: red;
+  font-size: 1em;
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+}
+`;

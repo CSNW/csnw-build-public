@@ -1,0 +1,92 @@
+#! /usr/bin/env node
+require('v8-compile-cache');
+
+require('dotenv').config();
+const { join } = require('path');
+const mri = require('mri');
+const chalk = require('chalk');
+const { version } = require('../package.json');
+const CliError = require('../lib/utils/cli-error');
+const cleanError = require('../lib/utils/clean-error');
+
+const commands = ['dev', 'build', 'check', 'serve', 'test', 'deploy'];
+const usage = chalk`
+csnw-build v${version}
+
+Usage: csnw-build [command] [options]
+
+Commands:
+  - dev           Build project in development mode
+  - build         Build project for production
+  - check         Check project for build errors / warnings
+  - serve         Serve project
+  - test          Test project
+  - deploy        Deploy project
+
+Options:
+  -h, --help      Output usage information
+  -v, --version   Output the version number
+  --debug         Display debugging information
+                  (can optionally pass comma-separated filters)
+  
+Use \`{white.bold csnw-build COMMAND --help}\` for help on specific commands.`;
+
+process.name = 'csnw-build';
+process.on('unhandledRejection', handleError);
+
+main()
+  .then(() => process.exit(0))
+  .catch(handleError);
+
+async function main() {
+  const args = mri(process.argv.slice(2), {
+    alias: {
+      h: 'help',
+      v: 'version'
+    }
+  });
+  const [command] = args._;
+
+  if (!command) {
+    if (args.version) console.log(version);
+    else console.log(usage);
+    return;
+  }
+
+  if (!commands.includes(command)) {
+    throw new CliError(
+      `Unknown command "${command}". Try "csnw-build --help" for a list of available commands.`,
+      { noStack: true }
+    );
+  }
+
+  if (args.debug) {
+    let debug = args.debug;
+    if (debug === true) debug = '*';
+    else if (Array.isArray(debug)) debug = debug.join(',');
+
+    const filters = debug.split(',').map(filter => `csnw-build:${filter}`);
+    const existing = process.env.DEBUG ? process.env.DEBUG.split(',') : [];
+
+    process.env.DEBUG = existing.concat(filters).join(',');
+  }
+
+  let fn;
+  try {
+    fn = require(`./csnw-build-${command}`);
+  } catch (err) {
+    throw new CliError(`Failed to load command "${command}"`, {
+      original: err
+    });
+  }
+
+  await fn(args);
+}
+
+function handleError(err) {
+  let { message, stack } = err.formatted || cleanError(err);
+  stack = stack ? `\n\n${stack}` : '';
+
+  console.error(`${chalk.redBright('ERROR')} ${message}${stack}`);
+  process.exit(1);
+}

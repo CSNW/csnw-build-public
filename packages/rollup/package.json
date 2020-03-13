@@ -1,0 +1,20 @@
+{
+  "name": "@csnw-build/rollup",
+  "private": true,
+  "version": "0.3.5",
+  "description": "Use rollup in build pipeline for csnw-build",
+  "author": "Tim Hall <tim.hall@cornerstonenw.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "@csnw-build/pipeline": "^0.3.5",
+    "@csnw-build/utils": "^0.3.4",
+    "debug": "^3.1"
+  },
+  "_peerDependencies": {
+    "rollup": "^0.56"
+  }
+}

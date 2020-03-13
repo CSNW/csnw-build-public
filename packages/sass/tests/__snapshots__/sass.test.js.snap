@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "a.css": Object {
+    "baseDir": "C:/dev/csnw-build/packages/sass/tests/fixtures",
+    "contents": "body {
+  background-color: blue; }
+
+h1 {
+  color: red; }
+
+",
+    "cwd": "C:/dev/csnw-build/packages/sass/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/sass/tests/fixtures/a.css",
+    "sourceMap": Object {
+      "file": "a.css",
+      "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAHP,IAAI,GAId;;ACJD,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAG,GACX",
+      "names": Array [],
+      "sources": Array [
+        "../../../../a.scss",
+        "_b.scss",
+      ],
+      "sourcesContent": Array [
+        "$color-bg: blue;
+
+body {
+  background-color: $color-bg;
+}
+
+@import 'b';
+",
+        "h1 {
+  color: red;
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+  "c.css": Object {
+    "baseDir": "C:/dev/csnw-build/packages/sass/tests/fixtures",
+    "contents": "h2 {
+  color: green; }
+
+",
+    "cwd": "C:/dev/csnw-build/packages/sass/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/sass/tests/fixtures/c.css",
+    "sourceMap": Object {
+      "file": "c.css",
+      "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK,GAAG",
+      "names": Array [],
+      "sources": Array [
+        "../../../../c.sass",
+      ],
+      "sourcesContent": Array [
+        "h2 {
+  color: green; }
+",
+      ],
+      "version": 3,
+    },
+  },
+}
+`;

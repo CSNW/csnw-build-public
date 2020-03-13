@@ -1,24 +1,81 @@
 {
   "name": "csnw-build",
   "private": true,
-  "version": "0.6.1",
-  "description": "Internal build utils for CSNW",
+  "version": "0.3.8",
+  "description": "Internal build system for CSNW",
   "repository": "github:CSNW/csnw-build",
   "license": "MIT",
   "homepage": "https://github.com/CSNW/csnw-build#readme",
   "author": "Tim Hall <tim.hall@cornerstonenw.com>",
+  "main": "packages/csnw-build/lib/index.js",
+  "bin": {
+    "csnw-build": "packages/csnw-build/bin/csnw-build"
+  },
   "scripts": {
-    "test": "exit 0",
-    "format": "prettier --write \"**/*.{js}\""
+    "postinstall": "lerna bootstrap --hoist && node scripts/validate",
+    "test": "jest",
+    "format": "prettier --write \"**/*.{js,md}\"",
+    "release": "node scripts/dependencies && lerna publish --skip-git --skip-npm"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "snapshotSerializers": [
+      "./scripts/files-serializer"
+    ]
   },
   "prettier": {
-    "singleQuote": true,
-    "printWidth": 100
+    "singleQuote": true
   },
   "dependencies": {
-    "mri": "^1.1.4"
+    "chalk": "^2.3",
+    "chokidar": "^2.0",
+    "concat-with-sourcemaps": "^1.0",
+    "connect": "^3.6",
+    "connect-livereload": "^0.6",
+    "convert-source-map": "^1.5",
+    "cross-spawn": "^6.0",
+    "debug": "^3.1",
+    "detect-newline": "^2.1",
+    "detect-port-alt": "^1.1",
+    "dotenv": "^5.0",
+    "front-matter": "^2.3",
+    "fs-extra": "^5.0",
+    "inline-source": "^6.1",
+    "glob": "^7.1",
+    "glob-base": "^0.3",
+    "just-debounce": "^1.0",
+    "lerna": "^3.0.0-beta.14",
+    "magic-string": "^0.22",
+    "metalsmith-in-place": "^1.0",
+    "metalsmith-layouts": "^1.0",
+    "mri": "^1.1",
+    "micromatch": "^3.1",
+    "pretty-hrtime": "^1.0",
+    "react-dev-utils": "^5.0",
+    "resolve": "^1.5",
+    "semver": "^5.5",
+    "serve-index": "^1.9",
+    "serve-static": "^1.13",
+    "simple-git": "^1.89",
+    "source-map": "^0.7",
+    "stack-utils": "^1.0",
+    "tiny-lr": "^1.1",
+    "v8-compile-cache": "^1.1",
+    "ware": "^1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.40",
+    "@babel/preset-typescript": "^7.0.0-beta.40",
+    "clean-css": "^4.1",
+    "handlebars": "^4.0",
+    "jest": "^22.1",
+    "less": "^3.0",
+    "node-sass": "^4.7",
+    "prettier": "^1.10",
+    "rollup": "^0.56",
+    "typescript": "^2.7",
+    "uglify-es": "^3.3",
+    "walk-sync": "^0.3"
   }
 }

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "templates.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/handlebars/tests/fixtures/src",
+    "contents": "window[\\"TEMPLATES\\"] = window[\\"TEMPLATES\\"] || {};
+window[\\"TEMPLATES\\"][\\"a\\"] = Handlebars.template({\\"compiler\\":[7,\\">= 4.0.0\\"],\\"main\\":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return \\"Hello \\"
+    + ((stack1 = container.invokePartial(partials.name,depth0,{\\"name\\":\\"name\\",\\"data\\":data,\\"helpers\\":helpers,\\"partials\\":partials,\\"decorators\\":container.decorators})) != null ? stack1 : \\"\\")
+    + ((stack1 = container.invokePartial(partials.punctuation,depth0,{\\"name\\":\\"punctuation\\",\\"data\\":data,\\"helpers\\":helpers,\\"partials\\":partials,\\"decorators\\":container.decorators})) != null ? stack1 : \\"\\");
+},\\"usePartial\\":true,\\"useData\\":true});
+Handlebars.registerPartial('name', Handlebars.template({\\"compiler\\":[7,\\">= 4.0.0\\"],\\"main\\":function(container,depth0,helpers,partials,data) {
+    return \\"NAME\\";
+},\\"useData\\":true}));
+Handlebars.registerPartial('punctuation', Handlebars.template({\\"compiler\\":[7,\\">= 4.0.0\\"],\\"main\\":function(container,depth0,helpers,partials,data) {
+    return \\"!\\";
+},\\"useData\\":true}));",
+    "cwd": "C:/dev/csnw-build/packages/handlebars/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/handlebars/tests/fixtures/src/templates.js",
+    "sourceMap": null,
+  },
+}
+`;

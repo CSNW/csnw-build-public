@@ -1,0 +1,30 @@
+{
+  "name": "@csnw-build/core",
+  "private": true,
+  "version": "0.3.8",
+  "description": "Internal build system for CSNW",
+  "author": "Tim Hall <tim.hall@cornerstonenw.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "cnsw-build": "bin/csnw-build"
+  },
+  "scripts": {
+    "test": "exit 0",
+  },
+  "dependencies": {
+    "@csnw-build/pipeline": "^0.3.5",
+    "@csnw-build/utils": "^0.3.4",
+    "chalk": "^2.3",
+    "connect": "^3.6",
+    "debug": "^3.1",
+    "dotenv": "^5.0",
+    "fs-extra": "^5.0",
+    "mri": "^1.1",
+    "react-dev-utils": "^5.0",
+    "serve-index": "^1.9",
+    "serve-static": "^1.13",
+    "stack-utils": "^1.0",
+    "v8-compile-cache": "^1.1"
+  }
+}

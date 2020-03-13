@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "bundle.es.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rollup/tests/fixtures",
+    "contents": "const message = 'Howdy';
+
+function sayHi(name) {
+  console.log(\`\${message} \${name}!\`);
+}
+
+export { sayHi };
+",
+    "cwd": "C:/dev/csnw-build/packages/rollup/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/rollup/tests/fixtures/bundle.es.js",
+    "sourceMap": Object {
+      "file": "bundle.es.js",
+      "mappings": "AAAO,MAAM,OAAO,GAAG,OAAO,CAAC;;ACExB,SAAS,KAAK,CAAC,IAAI,EAAE;EAC1B,OAAO,CAAC,GAAG,CAAC,CAAC,EAAE,OAAO,CAAC,CAAC,EAAE,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC;CACpC;;;;",
+      "names": Array [],
+      "sources": Array [
+        "packages/rollup/tests/fixtures/a.js",
+        "packages/rollup/tests/fixtures/entry.js",
+      ],
+      "sourcesContent": Array [
+        "export const message = 'Howdy';
+",
+        "import { message } from './a';
+
+export function sayHi(name) {
+  console.log(\`\${message} \${name}!\`);
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+  "passthrough.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rollup/tests/fixtures",
+    "contents": "<title>Passthrough</title>",
+    "cwd": "C:/dev/csnw-build/packages/rollup/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/rollup/tests/fixtures/passthrough.html",
+    "sourceMap": null,
+  },
+  "vendor.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/rollup/tests/fixtures",
+    "contents": "(function () {
+'use strict';
+
+function b() {
+  console.log('b');
+}
+
+function main() {
+  console.log('main');
+}
+
+b();
+main();
+
+}());
+",
+    "cwd": "C:/dev/csnw-build/packages/rollup/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/rollup/tests/fixtures/vendor.js",
+    "sourceMap": Object {
+      "file": "vendor.js",
+      "mappings": ";;;AAAO,SAAS,CAAC,GAAG;EAClB,OAAO,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC;CAClB;;ACAD,SAAS,IAAI,GAAG;EACd,OAAO,CAAC,GAAG,CAAC,MAAM,CAAC,CAAC;CACrB;;AAED,CAAC,EAAE,CAAC;AACJ,IAAI,EAAE,CAAC;;;;",
+      "names": Array [],
+      "sources": Array [
+        "packages/rollup/tests/fixtures/b.js",
+        "packages/rollup/tests/fixtures/vendor.js",
+      ],
+      "sourcesContent": Array [
+        "export function b() {
+  console.log('b');
+}
+",
+        "import { b } from './b';
+
+function main() {
+  console.log('main');
+}
+
+b();
+main();
+",
+      ],
+      "version": 3,
+    },
+  },
+}
+`;

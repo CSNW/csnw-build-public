@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "a.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/babel/tests/fixtures",
+    "contents": "class A {
+  constructor() {
+    Object.defineProperty(this, \\"name\\", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: 'a'
+    });
+  }
+
+}",
+    "cwd": "C:/dev/csnw-build/packages/babel/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/babel/tests/fixtures/a.js",
+    "sourceMap": Object {
+      "file": "a.js",
+      "mappings": "AAAA,MAAMA,CAAN,CAAQ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aACC;AADD;AAAA;;AAAA",
+      "names": Array [
+        "A",
+      ],
+      "sources": Array [
+        "a.js",
+      ],
+      "sourcesContent": Array [
+        "class A {
+  name = 'a';
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+  "b.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/babel/tests/fixtures",
+    "contents": "class B {
+  constructor() {
+    Object.defineProperty(this, \\"name\\", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: 'b'
+    });
+  }
+
+}",
+    "cwd": "C:/dev/csnw-build/packages/babel/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/babel/tests/fixtures/b.js",
+    "sourceMap": Object {
+      "file": "b.js",
+      "mappings": "AAAA,MAAMA,CAAN,CAAQ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aACS;AADT;AAAA;;AAAA",
+      "names": Array [
+        "B",
+      ],
+      "sources": Array [
+        "b.ts",
+      ],
+      "sourcesContent": Array [
+        "class B {
+  name: string = 'b';
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+  "ignore.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/babel/tests/fixtures",
+    "contents": "class Ignore {
+  ignored = true;
+}
+",
+    "cwd": "C:/dev/csnw-build/packages/babel/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/babel/tests/fixtures/ignore.js",
+    "sourceMap": null,
+  },
+}
+`;

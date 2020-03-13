@@ -1,0 +1,3 @@
+class Ignore {
+  ignored = true;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@csnw-build/rev",
+  "private": true,
+  "version": "0.3.7",
+  "description": "Rev and replace assets in build pipeline",
+  "author": "Tim Hall <tim.hall@cornerstonenw.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "@csnw-build/pipeline": "^0.3.5",
+    "@csnw-build/utils": "^0.3.4",
+    "debug": "^3.1",
+    "magic-string": "^0.22"
+  }
+}

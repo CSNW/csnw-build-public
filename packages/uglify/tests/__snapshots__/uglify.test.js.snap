@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "a.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "contents": "function test(){return\\"done.\\"}",
+    "cwd": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/uglify/tests/fixtures/a.js",
+    "sourceMap": Object {
+      "file": "a.js",
+      "mappings": "AAAA,SAASA,OAQP,MADe",
+      "names": Array [
+        "test",
+      ],
+      "sources": Array [
+        "a.js",
+      ],
+      "sourcesContent": Array [
+        "function test() {
+  const name = \`a\`;
+
+  if (name !== 'a') {
+    console.log('not a');
+  }
+
+  const result = \`done.\`;
+  return result;
+}
+",
+      ],
+      "version": 3,
+    },
+  },
+  "b.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "contents": "<title>B</title>",
+    "cwd": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/uglify/tests/fixtures/b.html",
+    "sourceMap": null,
+  },
+}
+`;
+
+exports[`skip pipeline in development 1`] = `
+Object {
+  "a.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "contents": "function test() {
+  const name = \`a\`;
+
+  if (name !== 'a') {
+    console.log('not a');
+  }
+
+  const result = \`done.\`;
+  return result;
+}
+",
+    "cwd": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/uglify/tests/fixtures/a.js",
+    "sourceMap": null,
+  },
+  "b.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "contents": "<title>B</title>",
+    "cwd": "C:/dev/csnw-build/packages/uglify/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/uglify/tests/fixtures/b.html",
+    "sourceMap": null,
+  },
+}
+`;

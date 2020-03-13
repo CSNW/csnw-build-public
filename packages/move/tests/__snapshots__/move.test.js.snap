@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "b.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/move/tests/fixtures",
+    "contents": "<title>B</title>",
+    "cwd": "C:/dev/csnw-build/packages/move/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/move/tests/fixtures/b.html",
+    "sourceMap": null,
+  },
+  "moved/a.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/move/tests/fixtures",
+    "contents": "var name = 'a';
+",
+    "cwd": "C:/dev/csnw-build/packages/move/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/move/tests/fixtures/moved/a.js",
+    "sourceMap": null,
+  },
+}
+`;

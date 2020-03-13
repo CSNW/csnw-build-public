@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "index.html": Object {
+    "baseDir": "C:/dev/csnw-build/packages/inline-source/tests/fixtures",
+    "contents": "<!doctype html>
+<html>
+  <head>
+    <title>inline-source</title>
+  </head>
+  <body>
+    <script>var name=\\"a\\";</script>
+    <script src=\\"/blog/main.js\\"></script>
+  </body>
+</html>",
+    "cwd": "C:/dev/csnw-build/packages/inline-source/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/inline-source/tests/fixtures/index.html",
+    "sourceMap": null,
+  },
+  "main.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/inline-source/tests/fixtures",
+    "contents": "var name = 'main';
+",
+    "cwd": "C:/dev/csnw-build/packages/inline-source/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/inline-source/tests/fixtures/main.js",
+    "sourceMap": null,
+  },
+}
+`;

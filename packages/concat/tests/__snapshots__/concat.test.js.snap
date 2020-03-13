@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline 1`] = `
+Object {
+  "bundle.js": Object {
+    "baseDir": "C:/dev/csnw-build/packages/concat/tests/fixtures",
+    "contents": "var name = 'a';
+
+var name = 'b';
+
+var name = 'c';
+",
+    "cwd": "C:/dev/csnw-build/packages/concat/tests/fixtures",
+    "path": "C:/dev/csnw-build/packages/concat/tests/fixtures/bundle.js",
+    "sourceMap": Object {
+      "file": "bundle.js",
+      "mappings": "AAAA;AACA;ACDA;AACA;ACDA;AACA",
+      "names": Array [],
+      "sources": Array [
+        "a.js",
+        "b.js",
+        "c.js",
+      ],
+      "sourcesContent": Array [
+        "var name = 'a';
+",
+        "var name = 'b';
+",
+        "var name = 'c';
+",
+      ],
+      "version": 3,
+    },
+  },
+}
+`;
