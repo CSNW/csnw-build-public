@@ -10,7 +10,7 @@
     "cnsw-build": "bin/csnw-build"
   },
   "scripts": {
-    "test": "exit 0",
+    "test": "exit 0"
   },
   "dependencies": {
     "@csnw-build/pipeline": "^0.3.5",
